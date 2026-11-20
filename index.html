@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ashraf Husain</title>
+<meta name="description" content="Ashraf Husain, B.Tech CSE student at Shri Ramswaroop Memorial University, Lucknow. Aspiring software developer.">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;500;700&family=Space+Grotesk:wght@400;600&family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="load"><b>AM</b></div>
+<canvas id="fx" aria-hidden="true"></canvas>
+<nav id="nav" aria-label="Primary"><button id="burger" aria-label="Toggle menu">☰</button></nav>
+
+<main>
+<section id="home">
+  <div>
+    <p class="serif" style="font-size:1.3rem">Learning Today, Building for Tomorrow.</p>
+    <h1 class="name">ASHRAF HUSAIN</h1>
+    <p class="head">Building Tomorrow,<br>One Line at a Time.</p>
+    <p style="color:var(--silver);max-width:52ch">B.Tech Computer Science &amp; Engineering · Aspiring Software Developer. Passionate about programming, technology, and creating useful, efficient, and creative software solutions.</p>
+    <p class="role" id="role" aria-live="off"></p>
+    <div class="cta"><a class="btn fill" href="#education">Explore My Journey</a><a class="btn" href="#contact">Let's Connect</a></div>
+  </div>
+  <div>
+    <div class="portrait">
+      <div class="ring b"></div><div class="ring"></div>
+      <div class="frame"><span class="mono" id="mono">AH</span><img id="photo" alt="Portrait of Ashraf Husain"></div>
+      <label class="up" for="pick"></label>
+      <input id="pick" type="file" accept="image/*" hidden>
+    </div>
+    <div class="scroll" aria-hidden="true" style="margin-top:80px"></div>
+  </div>
+</section>
+
+<section id="about"><div class="split">
+  <div class="rv"><h2>Beyond the Code</h2>
+    <p>I am a B.Tech student in Computer Science &amp; Engineering, passionate about programming and technology.</p><br>
+    <p>Currently building my skills in Java, C, Data Structures &amp; Algorithms, and Web Development to create useful, efficient, and creative software.</p><br>
+    <p class="serif" style="font-size:1.25rem">To become a Professional Software Developer by building useful, efficient, and creative software solutions.</p></div>
+  <div class="grid g2 rv" id="aboutCards"></div>
+</div></section>
+
+<section id="education"><h2 class="rv">Academic Journey</h2><p class="sub rv">From school boards to a computer science degree.</p>
+  <div class="tl" id="tl"></div></section>
+
+<section id="skills"><h2 class="rv">My Technology Stack</h2><p class="sub rv">Honest proficiency labels, not invented percentages.</p><div id="skillBox"></div></section>
+
+<section id="tools"><h2 class="rv">Tools I Work With</h2><div class="grid g3" id="toolBox"></div>
+  <h3 class="cat" style="margin-top:44px">Professional strengths</h3><div class="grid g3" id="softBox"></div></section>
+
+<section id="projects"><h2 class="rv">Turning Ideas Into Reality.</h2><p class="sub rv">No verified projects yet. These are editable slots: add entries to <code>PROJECTS</code> in the config at the top of this file's script.</p><div class="grid g3" id="projBox"></div></section>
+
+<section id="goals"><div class="split">
+  <div class="rv"><h2>My Goal</h2><p style="font-size:clamp(1.4rem,3vw,2rem);font-family:Sora">To become a <span class="serif">Professional Software Developer.</span></p><p class="sub" style="margin-top:14px">Building useful, efficient and creative software solutions.</p></div>
+  <div class="grid" id="focusBox"></div></div>
+  <h2 class="rv" style="margin-top:80px">Evolution Never Stops.</h2><p class="sub rv">Learning interests, not claims of expertise.</p><div class="road" id="road"></div></section>
+
+<section id="contact"><h2 class="rv">Have an Idea? Let's Build Something Meaningful.</h2>
+  <p class="sub rv">Let's connect, collaborate, and create something meaningful.</p>
+  <div class="split"><div class="grid" id="contactCards"></div>
+  <form id="cf" novalidate class="card"><label>Name<input id="fn" autocomplete="name"></label><div class="err" id="en"></div>
+    <label>Email<input id="fe" type="email" autocomplete="email"></label><div class="err" id="ee"></div>
+    <label>Message<textarea id="fm" rows="4"></textarea></label><div class="err" id="em"></div>
+    <button class="btn fill" type="submit">Send message</button><div class="err" id="ok" style="color:var(--gold)"></div></form></div></section>
+</main>
+
+<footer>
+  <h3>ASHRAF HUSAIN</h3><p class="serif" style="font-size:1.2rem">Learning Today, Building for Tomorrow.</p>
+  <p>B.Tech Computer Science &amp; Engineering<br>Shri Ramswaroop Memorial University<br>Lucknow, Uttar Pradesh, India.</p>
+  <p id="fnav" style="margin:16px 0"></p><p><a id="fmail" href="#">Email</a></p>
+  <p style="margin-top:14px">© <span id="yr"></span> Ashraf Husain</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
